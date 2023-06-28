@@ -34,7 +34,7 @@ body {
 .card-container {
   background-color: var(--cardBG);
   display: flex;
-  height: 39rem;
+  height: 40rem;
   width: 25rem;
   flex-direction: column;
   border-radius: 0.75rem;
@@ -50,6 +50,11 @@ body {
   padding-block-start: var(--space-1);
   padding-block-end: var(--space-05);
   font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.card-container #title:hover {
+  color: var(--clr-cyanPrimary);
 }
 
 .card-container p {
@@ -57,13 +62,14 @@ body {
   font-size: 1.1rem;
   font-weight: 300;
   line-height: 1.8;
+
+  animation: colorChange 10s ease;
 }
 
 .img-equilibrium {
   width: 100%;
-  /* width: 25rem;
-  height: 25rem; */
   border-radius: 1rem;
+  transition: all 0.3s ease;
 }
 
 .card-info {
@@ -80,7 +86,7 @@ body {
 }
 
 .card-info {
-  margin-top: 1rem;
+  margin-block: 1rem;
 }
 
 .card-info #left-info {
@@ -92,8 +98,10 @@ body {
   font-weight: 400;
 }
 
-.space-between {
-  margin-top: 1rem;
+.line {
+  width: 100%;
+  height: 1.35px;
+  box-shadow: 0 0 5px var(--clr-line);
   background-color: var(--clr-line);
 }
 
@@ -113,4 +121,10 @@ body {
   text-decoration: none;
   color: var(--clr-white);
   font-weight: 600;
+  padding-left: 0.2rem;
+  transition: color 0.3s ease;
+}
+
+.footer-info p > a:hover {
+  color: var(--clr-cyanPrimary);
 }
