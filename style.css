@@ -19,6 +19,8 @@ body {
 .card-container {
   background-color: var(--cardBG);
   display: flex;
+  height: 36rem;
+  width:20rem ;
   flex-direction: column;
   border-radius: 0.75rem;
   padding: 2rem;
@@ -28,7 +30,8 @@ body {
   color: var(--clr-bluePrimary);
 }
 .img-equilibrium {
-  width: 25rem;
-  height: 25rem;
+    width: 100%;
+  /* width: 25rem;
+  height: 25rem; */
   border-radius: 1rem;
 }
