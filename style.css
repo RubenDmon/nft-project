@@ -4,6 +4,7 @@
   --clr-bluePrimary: hsl(215, 51%, 70%);
   --clr-cyanPrimary: hsl(178, 100%, 50%);
   --clr-white: #fafafa;
+  --clr-line: hsl(215, 32%, 27%);
 
   --ff-base: "Outfit", sans-serif;
 
@@ -33,7 +34,7 @@ body {
 .card-container {
   background-color: var(--cardBG);
   display: flex;
-  height: 38rem;
+  height: 39rem;
   width: 25rem;
   flex-direction: column;
   border-radius: 0.75rem;
@@ -75,6 +76,11 @@ body {
   display: flex;
   align-items: center;
   gap: var(--space-05);
+  font-size: 0.75rem;
+}
+
+.card-info {
+  margin-top: 1rem;
 }
 
 .card-info #left-info {
@@ -84,4 +90,27 @@ body {
 .card-info #right-info {
   color: var(--clr-bluePrimary);
   font-weight: 400;
+}
+
+.space-between {
+  margin-top: 1rem;
+  background-color: var(--clr-line);
+}
+
+.footer-info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.85rem;
+}
+
+.footer-info img {
+  width: 2.5rem;
+  border: 1px solid var(--clr-white);
+  border-radius: 50%;
+}
+.footer-info p > a {
+  text-decoration: none;
+  color: var(--clr-white);
+  font-weight: 600;
 }
