@@ -1,0 +1,7 @@
+:root{
+--mainBG:hsl(217, 54%, 11%);
+--cardBG:hsl(216, 50%, 16%);
+}
+body{
+background-color: var(--mainBG);
+}
