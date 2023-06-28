@@ -15,6 +15,12 @@
     <title>Proyecto juntos</title>
 
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
 
     <meta name="author" content="Rdmon,victicor31,lunanegra" />
     <meta name="keywords" content="nft,html,css,crypto" />
@@ -31,11 +37,17 @@
           src="images/image-equilibrium.jpg"
           alt="Equilibrium-img"
         />
-        <h1>Equilibrium #3429</h1>
+        <h1 id="title">Equilibrium #3429</h1>
         <p>Our Equilibrium collection promotes balance and calm.</p>
-        <div>
-          <h2><img src="" alt="icono de ethereum" />0.041 ETH</h2>
-          <h2><img src="" alt="icono de reloj" />3 days left</h2>
+        <div class="card-info">
+          <div class="info-container" id="left-info">
+            <img src="images/icon-ethereum.svg" alt="icono de ethereum" />
+            <h2>0.041 ETH</h2>
+          </div>
+          <div class="info-container" id="right-info">
+            <img src="images/icon-clock.svg" alt="icono de reloj" />
+            <h2 id="right-info">3 days left</h2>
+          </div>
         </div>
         <div>
           <img src="" alt="" />
